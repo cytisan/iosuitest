@@ -20,7 +20,7 @@ class ManageRosterTableViewController: UITableViewController {
         self.refreshControl = refreshControl
     }
 
-    func refresh() {
+    @objc func refresh() {
         let alert = UIAlertController(title: "Roster Refreshed", message: nil, preferredStyle: UIAlertControllerStyle.alert)
         alert.addAction(UIAlertAction(title: "Dismiss", style: UIAlertActionStyle.cancel, handler: nil))
         present(alert, animated: true, completion: nil)
